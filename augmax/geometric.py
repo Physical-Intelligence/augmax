@@ -343,7 +343,7 @@ class Crop(SizeChangingGeometricTransformation):
         # self.dx/dy is in (0,0) -- (H,W) reference frame
         # => push it to (-H/2, -W/2) -- (H/2, W/2) reference frame
 
-        # Forward transform: Translate by (dx, dy)
+        # Forward transform: translate by (dx, dy)
         if invert:
             center_y = -center_y
             center_x = -center_x
